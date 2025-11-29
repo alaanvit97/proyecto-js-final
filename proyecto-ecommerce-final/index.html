@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda JS | Proyecto Final</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">MiTienda</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="cart-icon" onclick="toggleCarrito()">
+                        🛒 <span id="contador-carrito">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Bienvenido a nuestra tienda</h1>
+                <p>Las mejores ofertas en un solo lugar.</p>
+                <a href="#productos" class="btn">Ver Productos</a>
+            </div>
+        </section>
+
+        <section class="container seccion-multimedia">
+            <h2>Sobre Nosotros</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de presentación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="productos" class="container">
+            <h2>Nuestros Productos</h2>
+            <div id="contenedor-productos" class="productos-grid">
+                <p>Cargando catálogo...</p>
+            </div>
+        </section>
+
+        <section id="resenas" class="container">
+            <h2>Opiniones de Clientes</h2>
+            <div class="grid-resenas">
+                <div class="card-resena">
+                    <h3>Ana P.</h3>
+                    <p>"Excelente servicio, llegó muy rápido."</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+                <div class="card-resena">
+                    <h3>Carlos M.</h3>
+                    <p>"El producto es tal cual la foto."</p>
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+                <div class="card-resena">
+                    <h3>Lucía R.</h3>
+                    <p>"Me encanta la calidad."</p>
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2>Contáctanos</h2>
+            <div class="contacto-wrapper">
+                <form id="formulario-contacto" action="https://formspree.io/f/xnqoonqe" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span id="mensaje-error-email" class="error-text"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Proyecto Final E-commerce.</p>
+    </footer>
+
+    <div id="carrito-sidebar" class="carrito-sidebar">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <button onclick="toggleCarrito()" class="btn-cerrar">X</button>
+        </div>
+        <div id="carrito-items" class="carrito-body">
+            </div>
+        <div class="carrito-footer">
+            <h3>Total: $<span id="carrito-total">0.00</span></h3>
+            <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar Carrito</button>
+            <button onclick="finalizarCompra()" class="btn-comprar">Comprar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
