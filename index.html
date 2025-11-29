@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda JS | Proyecto Final</title>
+    <title>Tienda de Ropa | Proyecto Final</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div class="container header-content">
-            <div class="logo">MiTienda</div>
+            <a href="index.html" class="logo-circular">
+                Tienda de Ropa
+            </a>
+
             <nav>
                 <ul class="nav-list">
                     <li><a href="#inicio">Inicio</a></li>
@@ -28,7 +31,7 @@
     <main>
         <section id="inicio" class="hero">
             <div class="hero-text">
-                <h1>Bienvenido a nuestra tienda</h1>
+                <h1>Bienvenido a Tienda de Ropa</h1>
                 <p>Las mejores ofertas en un solo lugar.</p>
                 <a href="#productos" class="btn">Ver Productos</a>
             </div>
@@ -37,7 +40,7 @@
         <section class="container seccion-multimedia">
             <h2>Sobre Nosotros</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de presentación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -93,7 +96,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Proyecto Final E-commerce.</p>
+        <p>&copy; 2025 Proyecto Final E-commerce. Talento Tech</p>
+        <p style="font-size: 0.8rem; margin-top: 5px;">Todos los derechos reservados.</p>
     </footer>
 
     <div id="carrito-sidebar" class="carrito-sidebar">
@@ -101,16 +105,14 @@
             <h3>Tu Carrito</h3>
             <button onclick="toggleCarrito()" class="btn-cerrar">X</button>
         </div>
-        <div id="carrito-items" class="carrito-body">
-            </div>
+        <div id="carrito-items" class="carrito-body"></div>
         <div class="carrito-footer">
             <h3>Total: $<span id="carrito-total">0.00</span></h3>
             <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar Carrito</button>
-            <button onclick="finalizarCompra()" class="btn-comprar">Comprar</button>
+            <button onclick="finalizarCompra()" class="btn-comprar-final">Comprar</button>
         </div>
     </div>
 
     <script src="./script.js"></script>
 </body>
 </html>
-
