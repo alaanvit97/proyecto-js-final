@@ -1,29 +1,16 @@
-# Proyecto Final Ecommerce - JavaScript
+# Tienda de Ropa - Proyecto Final JavaScript 🛒
 
 ## Descripción
-Sitio web de e-commerce responsive que consume productos de una API REST, gestiona un carrito de compras dinámico y permite contacto mediante formulario.
+Este proyecto es una aplicación web de E-commerce desarrollada como trabajo final para el curso de **Talento Tech**. Simula una tienda de ropa online que consume datos dinámicos de una API, gestiona un carrito de compras y cuenta con un diseño totalmente responsivo.
 
-## Estructura
-* **Header:** Navegación y acceso al carrito.
-* **Inicio:** Banner principal con background.
-* **Productos:** Cards generadas dinámicamente con JavaScript (Flexbox).
-* **Reseñas:** Sección de testimonios maquetada con CSS Grid.
-* **Contacto:** Formulario validado con envío a Formspree.
+🔗 **[Ver Proyecto Online aquí](https://alaanvit97.github.io/proyecto-js-final/)**
 
-## Tecnologías y Conceptos Aplicados
-1. **HTML5 Semántico:** Etiquetas `header`, `nav`, `main`, `section`.
-2. **CSS3:**
-   - **Flexbox:** Para el menú y el listado de productos.
-   - **Grid:** Para la sección de reseñas.
-   - **Media Queries:** Para adaptar el formulario en móviles.
-   - **Google Fonts:** Tipografía 'Poppins'.
-3. **JavaScript (ES6):**
-   - **Fetch API:** Consumo de datos de `fakestoreapi.com`.
-   - **DOM Manipulation:** Renderizado de cards e items del carrito.
-   - **LocalStorage:** Persistencia de datos del carrito.
-   - **Eventos:** Manejo de clicks y validación de formulario.
-
-## Instrucciones
-1. Abrir `index.html`.
-2. Navegar por los productos y agregar al carrito.
-3. Verificar que el carrito persiste al recargar la página.
+## Características Principales 🚀
+* **Catálogo en Tiempo Real:** Consumo de datos mediante `fetch` a la [FakeStoreAPI](https://fakestoreapi.com/).
+* **Gestión de Stock:** Implementación de lógica JavaScript para detectar productos sin disponibilidad y deshabilitar su compra (Botón "Sin Stock").
+* **Carrito de Compras Inteligente:**
+    * Agregar y eliminar productos.
+    * Modificación de cantidades en tiempo real.
+    * Cálculo automático de totales.
+    * **Persistencia:** Los datos del carrito se guardan en `localStorage`, por lo que no se pierden al recargar la página.
+* **Diseño Responsivo:**
