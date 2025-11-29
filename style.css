@@ -1,4 +1,4 @@
-/* RESET y FUENTES */
+/* FUENTES */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -25,7 +25,7 @@ header {
     align-items: center;
 }
 
-/* LOGO CIRCULAR (NUEVO) */
+/* LOGO CIRCULAR */
 .logo-circular {
     font-family: 'Playfair Display', serif; /* Tipografía distinta */
     font-size: 1.2rem;
@@ -81,7 +81,7 @@ header {
 }
 .btn:hover { background: #d35400; }
 
-/* BOTÓN SIN STOCK (NUEVO) */
+/* BOTÓN SIN STOCK */
 .btn-sin-stock {
     background-color: #7f8c8d !important; /* Gris */
     cursor: not-allowed;
@@ -157,3 +157,4 @@ footer { background: #222; color: white; text-align: center; padding: 20px; marg
     .header-content { flex-direction: column; gap: 10px; }
     .logo-circular { width: 80px; height: 80px; font-size: 0.9rem; padding: 5px; }
 }
+
